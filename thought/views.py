@@ -1,6 +1,7 @@
-from django.shortcuts import render,HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 
 def f_homepage(request):
-    return HttpResponse("Anasayfa")
+    context = {}
+    return render(request,"thought/homepage.html",context)

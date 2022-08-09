@@ -1,0 +1,45 @@
+{% extends 'thought/base.html' %}
+
+
+{% block content %}
+
+
+<!-- Left post field -->
+<div class="col-8 p-2 bg-dark" >
+
+    <!-- Cards Header -->
+    <div class="card-header p-3 mb-1" style="background-color: #009c96" >
+        <span class="" style="color: #a8fffc; text-shadow: 1px 1.5px #a8fffc; ">LATEST THOUGHTS</span>
+      </div>
+
+        <!-- ---------------------------------------------- -->
+
+    <!-- card template  -->
+    <div class="card mb-1" >
+      <div class="card-body" style="background-color: #c5fcf0">
+        <h5 class="card-title">Buluşun Başlığı</h5>
+        <p class="card-text">Buluşun Basit Tanımı</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" style="background-color: #c5fcf0">Buluşun Ana Fikri</li>
+        <li class="list-group-item" style="background-color: #c5fcf0">Buluşun Odaklandığı Sorunlar</li>
+        <li class="list-group-item" style="background-color: #c5fcf0">01/06/2022 22:10</li>
+      </ul>
+
+
+      <!-- Button Templates -->
+      <div class="card-body row m-0" style="background-color: #c5fcf0">
+        <a href="#" class="btn col m-1" style=" background-color: #02b54f; color: #ffe6e3;
+            text-shadow: 1px 1.5px #ffe6e3;">UP</a>
+        <a href="#" class="btn col m-1" style="background-color: #cf0056; color: #d1dbff;
+            text-shadow: 1px 1.5px #d1dbff;">DOWN</a>
+        <a href="#" class="btn col m-1" style="background-color: #007358; color: #e0fff8;
+            text-shadow: 1px 1.5px #e0fff8;">READ</a>
+      </div>
+
+    </div>
+
+</div>
+
+
+{% endblock  %}
