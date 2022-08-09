@@ -120,14 +120,15 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
+
 STATIC_ROOT = join(BASE_DIR, 'staticfiles')
 STATIC_URL = 'static/'
 MEDIA_URL = '/images/'
 STATICFILES_DIR = [join(BASE_DIR, 'static')]
 MEDIA_ROOT = join(BASE_DIR, 'static/iamges')
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
