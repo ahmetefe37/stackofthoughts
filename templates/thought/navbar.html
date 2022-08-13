@@ -1,46 +1,57 @@
 <!-- Navbar  -->
-<div class="container bg-dark ">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark  border border-warning">
+<div class="container bg-dark">
+    <nav class="navbar navbar-expand-lg  border border-warning" style="background-color:#ffd147;">
 
         <!-- Logo Text -->
-        <a class="navbar-brand mx-4 " style="font-size: 28px; color: #e6fcfa; text-shadow: 2px 2px #e6fcfa;" href="#">STACK of THOUGHTS</a>
+        <a class="navbar-brand mx-4 " style="font-size: 28px; color: #5c5c5c; text-shadow: 2px 2px #5c5c5c;" 
+        href="{% url 'url_homepage' %}">STACK of THOUGHTS</a>
 
         <!-- Mobil Screen Toggle Menu Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Menu Choices -->
-        <div class="collapse navbar-collapse mx-2" id="navbarNav">
-        <ul class="navbar-nav">
+        <div class="collapse navbar-collapse mx-2 d-flex justify-content-end" id="navbarNav">
+        <span>
+            <ul class="navbar-nav">
 
-            <!-- Menu One Choice -->
-            <li class="nav-item active">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">Anasayfa</a>
-            </li>
+                <!-- Menu One Choice -->
+                <li class="nav-item active">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_homepage' %}">Anasayfa</a>
+                </li>
 
-            <li class="nav-item">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">İletişim</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">Giriş</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">Kayıt</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" style="font-size: 16px; color: #fafce6; text-shadow: 1.1px 1.1px #fafce6;" href="#">Profil</a>
-            </li>
-        </ul>
+                <li class="nav-item">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_contactpage' %}">İletişim</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_aboutuspage' %}">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_loginpage' %}">Giriş</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_registerpage' %}">Kayıt</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" style="font-size: 16px; color: #5c5c5c; text-shadow: 1.1px 1.1px #5c5c5c;" 
+                href="{% url 'url_profilepage' %}">Profil</a>
+                </li>
+            </ul>
+        </span>
 
-        <form class="form d-flex mx-4">
-            <input class="form-control " type="search" placeholder="Arama..." aria-label="Search">
-            <button class="btn btn-outline-warning " type="submit">Ara</button>
-        </form>
+        <span>
+            <form class="form d-flex mx-4" >
+                <input class="form-control " style="background-color:#5c5c5c;" type="search" placeholder="Arama..." aria-label="Search">
+                <button class="btn btn-outline-warning " style="background-color:#5c5c5c; color: white;" type="submit">Ara</button>
+            </form>
+        </span>
         </div>
 
     </nav>
